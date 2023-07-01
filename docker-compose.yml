@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: shuffler-postgres
+    image: postgres:15.2-alpine
+    environment:
+      POSTGRES_DB: "shuffler_local"
+      POSTGRES_USER: "local"
+      POSTGRES_PASSWORD: "root"
+      PGDATA: "/var/lib/postgresql/data"
+    volumes:
+      - postgres-db:/data/postgres
+    ports:
+      - "5432:5432"
+volumes:
+  postgres-db:
+    driver: local
