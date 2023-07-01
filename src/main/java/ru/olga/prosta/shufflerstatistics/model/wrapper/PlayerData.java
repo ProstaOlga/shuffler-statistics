@@ -14,6 +14,6 @@ import java.util.List;
 @Accessors(chain = true)
 @RequiredArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class PlayerData extends WebPayload{
+public class PlayerData extends WebPayload {
     private final List<PlayerDto> players;
 }
