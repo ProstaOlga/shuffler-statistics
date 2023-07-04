@@ -15,6 +15,11 @@ repositories {
     maven("https://jitpack.io")
 }
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
 dependencies {
     implementation(libs.spring.starter)
     implementation(libs.spring.web)
@@ -22,6 +27,8 @@ dependencies {
     implementation(libs.bundles.telegram)
     implementation(libs.bundles.data)
     implementation(libs.bundles.util)
+    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    testImplementation("junit:junit:4.13.1")
 
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)

@@ -22,4 +22,5 @@ public class SeasonController {
     public WebResponse<SeasonData> getSeasons() {
         return new WebResponse<>(seasonService.getSeasons());
     }
+
 }
