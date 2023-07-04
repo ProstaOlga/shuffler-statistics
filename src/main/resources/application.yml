@@ -6,7 +6,7 @@ spring:
     password: ${SHUFFLER_DB_PASSWORD:root}
   flyway:
     out-of-order: false
-    enabled: true
+    enabled: false
     locations:
       - classpath:db/migration
   jackson:

@@ -1,4 +1,4 @@
-package ru.olga.prosta.shufflerstatistics.configuration;
+package ru.olga.prosta.shufflerstatistics.config;
 
 import org.springframework.boot.convert.ApplicationConversionService;
 import org.springframework.context.annotation.Configuration;

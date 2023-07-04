@@ -27,8 +27,7 @@ dependencies {
     implementation(libs.bundles.telegram)
     implementation(libs.bundles.data)
     implementation(libs.bundles.util)
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
-    testImplementation("junit:junit:4.13.1")
+    implementation(libs.okhttp)
 
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
