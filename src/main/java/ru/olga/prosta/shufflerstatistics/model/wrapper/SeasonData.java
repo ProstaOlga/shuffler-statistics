@@ -8,11 +8,12 @@ import lombok.experimental.Accessors;
 import ru.olga.prosta.shufflerstatistics.model.dto.SeasonDto;
 
 import java.util.List;
+
 @Getter
 @Setter
 @Accessors(chain = true)
 @RequiredArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SeasonData extends WebPayload{
+public class SeasonData extends WebPayload {
     private final List<SeasonDto> seasons;
 }

@@ -12,6 +12,6 @@ import ru.olga.prosta.shufflerstatistics.model.dto.GraphDto;
 @Accessors(chain = true)
 @RequiredArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class GraphData extends WebPayload{
+public class GraphData extends WebPayload {
     private final GraphDto graph;
 }

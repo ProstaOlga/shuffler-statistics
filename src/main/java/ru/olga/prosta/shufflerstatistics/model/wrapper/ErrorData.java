@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 import ru.olga.prosta.shufflerstatistics.model.dto.ErrorDto;
+
 @Getter
 @Setter
 @Accessors(chain = true)
